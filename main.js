@@ -74,11 +74,19 @@ const fibonacciNumbers = [1, 1, 2, 3, 5, 8, 13];
 fibonacciNumbers.unshift('FRONT1');
 fibonacciNumbers.push('REAR1');
 fibonacciNumbers.push('REAR2');
-console.log(fibonacciNumbers);
+
+for (i = 0; i < fibonacciNumbers.length; i++) {
+  console.log(fibonacciNumbers[i]);
+}
 
 // Challenge 7
 // Make a NEW array with 5 values of your choice, using the same syntax as the array creation from the previous 6 challenges; that is, every value should be placed within the square brackets.  Now console.log out each value individually.
 console.log('=== Challenge 7 ===');
+const challenge7array = [1, 2, 3, 4, 5];
+
+for (i = 0; i < challenge7array.length; i++) {
+  console.log(challenge7array[i]);
+}
 
 // Challenge 8
 // Make a new EMPTY array and fill it with five values of your choice using BOTH .push AND .unshift, and then console.log out each value individually.
