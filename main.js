@@ -91,6 +91,16 @@ for (i = 0; i < challenge7array.length; i++) {
 // Challenge 8
 // Make a new EMPTY array and fill it with five values of your choice using BOTH .push AND .unshift, and then console.log out each value individually.
 console.log('=== Challenge 8 ===');
+const challenge8array = [];
+
+  for (nick = 0; nick < 3; nick++) {
+    challenge8array.push(Math.random() * 10);
+    console.log(challenge8array[nick]);
+  }
+  for (nick2 = 0; nick2 < 2; nick2++) {
+    challenge8array.unshift(Math.random() * 100);
+    console.log(challenge8array[nick2]);
+  }
 
 // Challenge 9
 // Loop through the `students` array from Challenge 1, starting at index 3 and ending at index 10 (INCLUSIVE), logging out each value individually.
