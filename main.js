@@ -48,6 +48,7 @@ for (i = 0; i < students.length; i++) {
 // Console.log out the even numbers in the following array, INCLUDING the negative ones. There should be four total printings.
 console.log('=== Challenge 4 ===');
 const mixedSignNumbers = [3, 15, 14, -2, -3, -8, -103, 4];
+
 for (i = 0; i < students.length; i++) {
   if (mixedSignNumbers[i] % 2 === 0 || mixedSignNumbers[i] < 0) {
   console.log(mixedSignNumbers[i]);
@@ -59,12 +60,16 @@ for (i = 0; i < students.length; i++) {
 console.log('=== Challenge 5 ===');
 const symmetricalCapitals = ['A', 'H', 'I', 'M', 'O', 'T', 'U', 'V', 'W', 'X', 'Y'];
 
+symmetricalCapitals.pop();
+symmetricalCapitals.shift();
+for (i = 0; i < symmetricalCapitals.length; i++) {
+  console.log(symmetricalCapitals[i]);
+}
 
 // Challenge 6
 // Add a value (your choice!) to the start of the following array and two values (of your choice) to the end simply by adding them in the following line, and then console.log out each value individually.
 console.log('=== Challenge 6 ===');
 const fibonacciNumbers = [1, 1, 2, 3, 5, 8, 13];
-
 
 // Challenge 7
 // Make a NEW array with 5 values of your choice, using the same syntax as the array creation from the previous 6 challenges; that is, every value should be placed within the square brackets.  Now console.log out each value individually.
