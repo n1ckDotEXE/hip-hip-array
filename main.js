@@ -71,6 +71,11 @@ for (i = 0; i < symmetricalCapitals.length; i++) {
 console.log('=== Challenge 6 ===');
 const fibonacciNumbers = [1, 1, 2, 3, 5, 8, 13];
 
+fibonacciNumbers.unshift('FRONT1');
+fibonacciNumbers.push('REAR1');
+fibonacciNumbers.push('REAR2');
+console.log(fibonacciNumbers);
+
 // Challenge 7
 // Make a NEW array with 5 values of your choice, using the same syntax as the array creation from the previous 6 challenges; that is, every value should be placed within the square brackets.  Now console.log out each value individually.
 console.log('=== Challenge 7 ===');
