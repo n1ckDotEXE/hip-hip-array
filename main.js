@@ -106,13 +106,28 @@ const challenge8array = [];
 // Loop through the `students` array from Challenge 1, starting at index 3 and ending at index 10 (INCLUSIVE), logging out each value individually.
 console.log('=== Challenge 9 ===');
 
-for (i = 3; i <= students.length; i++) {
-  console.log(students[i]);
+let  challenge9 = []
+for (let i = 3 ; i < 10; i++) {
+  challenge9.push(students[i]);
+}
+console.log(challenge9);
+for (let i = 0; i < challenge9.length; i++) {
+  console.log(challenge9[i]);
 }
 
 // Challenge 10
 // Loop through the `students` array from Challenge 1, making a COPY of the array, starting at index 3 and ending at index 10 (INCLUSIVE). This is very similar to string building; create a new array, loop through the old one, and put values from the original in the new one. Then log out each value of the copy indivudally.
 console.log('=== Challenge 10 ===');
+
+let challenge10 = students.slice(3);
+
+for (i = 0; i < challenge10.length; i++) {
+  console.log(challenge10[i]);
+}
+
+// Challenge 11
+// Make a COPY of the `students` array *using .slice*, starting at index 3 and ending at index 10 (INCLUSIVE), then log out each value of the copy individually. THEN log out each value of the original array. Notice that the original array didn't get any values taken out of it, because `slice` does NOT modify the original array.
+console.log('=== Challenge 11 ===');
 
 const newArr = students.slice(3);
 
@@ -120,15 +135,15 @@ for (i = 0; i < newArr.length; i++) {
   console.log(newArr[i]);
 }
 
-// Challenge 11
-// Make a COPY of the `students` array *using .slice*, starting at index 3 and ending at index 10 (INCLUSIVE), then log out each value of the copy individually. THEN log out each value of the original array. Notice that the original array didn't get any values taken out of it, because `slice` does NOT modify the original array.
-console.log('=== Challenge 11 ===');
-
 // Challenge 12
 // Pull the items at indices 4-6 (inclusive) from the following array using .splice (NOT .slice!), then console.log out each item from the ORIGINAL array. Note that .splice DOES change the original array.
 console.log('=== Challenge 12 ===');
 const dinosaurs = ['Velociraptor', 'T-Rex', 'Stegosaurus', 'Triceratops', 'Dimetrodon', 'Allosaur', 'Spinosaurus', 'Gigantosaur']
 
+dinosaurs.splice(3, 2);
+for (let i = 0; i < dinosaurs.length; i++) {
+  console.log(dinosaurs[i]);
+}
 
 // Challenge 13
 // Use .join to change the dinosaur strings from the above array into one string with a '*' string as the "separator". Then console.log out that string.
