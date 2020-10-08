@@ -106,9 +106,19 @@ const challenge8array = [];
 // Loop through the `students` array from Challenge 1, starting at index 3 and ending at index 10 (INCLUSIVE), logging out each value individually.
 console.log('=== Challenge 9 ===');
 
+for (i = 3; i <= students.length; i++) {
+  console.log(students[i]);
+}
+
 // Challenge 10
 // Loop through the `students` array from Challenge 1, making a COPY of the array, starting at index 3 and ending at index 10 (INCLUSIVE). This is very similar to string building; create a new array, loop through the old one, and put values from the original in the new one. Then log out each value of the copy indivudally.
 console.log('=== Challenge 10 ===');
+
+const newArr = students.slice(3);
+
+for (i = 0; i < newArr; i++) {
+  console.log(newArr[i]);
+}
 
 // Challenge 11
 // Make a COPY of the `students` array *using .slice*, starting at index 3 and ending at index 10 (INCLUSIVE), then log out each value of the copy individually. THEN log out each value of the original array. Notice that the original array didn't get any values taken out of it, because `slice` does NOT modify the original array.
