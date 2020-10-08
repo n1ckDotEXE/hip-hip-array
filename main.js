@@ -116,7 +116,7 @@ console.log('=== Challenge 10 ===');
 
 const newArr = students.slice(3);
 
-for (i = 0; i < newArr; i++) {
+for (i = 0; i < newArr.length; i++) {
   console.log(newArr[i]);
 }
 
